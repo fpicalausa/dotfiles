@@ -1,0 +1,11 @@
+Config { font = "xft:Inconsolata for Powerline-9"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = Bottom
+       , lowerOnStart = True
+       , commands = [ Run Network "wlan0" ["-L","0","-H","32","--normal","aquamarine2","--high","chocolate1"] 10
+                    , Run Date "%H:%M" "date" 10
+                    , Run StdinReader
+                    ]
+      , template = "%StdinReader% }{ %wlan0% * %date%"
+       }
