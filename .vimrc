@@ -202,7 +202,7 @@ au vimEnter * silent! so .project
 " Plugins configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:session_autosave=1
+let g:session_autosave='yes'
 let g:tex_flavor="latex"
 let g:tex_fold_enabled=0
 
